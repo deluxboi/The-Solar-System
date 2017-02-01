@@ -1,0 +1,49 @@
+.slide__lines{
+	bottom:0;
+	left:0;
+	position:absolute;
+	right:0;
+	top:0
+}
+.slide__line{
+	background:rgba(255,255,255,0.2);
+	position:absolute
+}
+.slide__line--horizontal{
+	left:0;
+	height:1px;
+	width:100%
+}
+.slide__line--horizontal:nth-child(1){
+	-webkit-animation:line-in-left 4s ease-in-out infinite;
+	animation:line-in-left 4s ease-in-out infinite;
+	top:40%;
+	-webkit-transform:translateX(-100%);
+	transform:translateX(-100%)
+}
+.slide__line--horizontal:nth-child(2){
+	-webkit-animation:line-in-right 6s ease-in-out infinite;
+	animation:line-in-right 6s ease-in-out infinite;
+	top:65%;
+	-webkit-transform:translateX(100%);
+	transform:translateX(100%)
+}
+.slide__line--vertical{
+	height:100%;
+	top:0;
+	width:1px
+}
+.slide__line--vertical:nth-child(3){
+	-webkit-animation:line-in-down 4s ease-in-out infinite;
+	animation:line-in-down 4s ease-in-out infinite;
+	left:30%;
+	-webkit-transform:translateY(-100%);
+	transform:translateY(-100%)
+}
+.slide__line--vertical:nth-child(4){
+	-webkit-animation:line-in-up 5s ease-in-out infinite;
+	animation:line-in-up 5s ease-in-out infinite;
+	left:75%;
+	-webkit-transform:translateY(100%);
+	transform:translateY(100%)
+}
